@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmic Discoveries</title>
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button id="goToTop" title="Go to Top">▲</button>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <!-- Left Logo -->
+          <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="Logo">
+          </a>
+      
+          <!-- Navbar Items (Dropdowns & Visitor Counter) -->
+          <div class="d-flex align-items-center ms-auto">
+            <!-- Explore Dropdown -->
+            <div class="dropdown me-4">
+              <a href="#" class="dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown">
+                EXPLORE
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#planets-section">Planets</a></li>
+                <li><a class="dropdown-item" href="#videos">Galaxies</a></li>
+                <li><a class="dropdown-item" href="#videos">Stars</a></li>
+                <li><a class="dropdown-item" href="#latest-developments">Latest Developments</a></li>
+                <li><a class="dropdown-item" href="#observatories">Observatories</a></li>
+                <li><a class="dropdown-item" href="#comets">Comets</a></li>
+                <li><a class="dropdown-item" href="#videos">Black Holes</a></li>
+                <li><a class="dropdown-item" href="#const">Constellations of the Sky</a></li>
+                <li><a class="dropdown-item" href="#CATEGORIES">The Big Bang Theory</a></li>
+                <li><a class="dropdown-item" href="#CATEGORIES">Evolution Of The Earth</a></li>
+              </ul>
+            </div>
+      
+            <!-- Multimedia Dropdown -->
+            <div class="dropdown me-4">
+              <a href="#" class="dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown">
+                MULTIMEDIA
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#videos">VIDEOS</a></li>
+                <li><a class="dropdown-item" href="#e-books">E-BOOKS</a></li>
+                <li><a class="dropdown-item" href="#">PODCASTS</a></li>
+                <li><a class="dropdown-item" href="#">ARTICLES</a></li>
+                <li><a class="dropdown-item" href="#">IMAGES</a></li>
+                <li><a class="dropdown-item" href="#">LIVE STUDY</a></li>
+              </ul>
+            </div>
+      
+            <!-- Visitor Counter -->
+            <div class="visitor-counter">
+              <i class="fas fa-users"></i>
+              <span id="visitorCount">:Visitors</span> 
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+  <!-- Hero Section -->
+  <section class="hero">
+    <!-- Sticky Floating Container -->
+    <div class="sticky-container">
+      <a href="#CATEGORIES">Evolution of the Earth</a>|
+      <a href="#planets-section">Planets</a>|
+      <a href="#comets">Comets</a>|
+      <a href="#CATEGORIES">THE BIG BANG</a>|
+      <a href="#shared-constellations-section">Constellation</a>|
+      <a href="#latest-developments">Latest Developments</a>|
+      <a href="#contact-about">Contacts</a>|
+      <a href="#contact-about">About</a>
+    </div>
+    <!-- Bottom Center Text -->
+    <div class="hero-text">
+      COSMIC DISCOVERIES
+    </div>
+  </section>
+
+
+  <section class="info-section py-5 bg-light" id="intro">
+  <div class="container text-center text-md-start">
+    <!-- Heading -->
+    <h1 class="display-4 fw-bold mb-4">Discover the Wonders of the Cosmos</h1>
+    <!-- Content -->
+    <p class="fs-5">
+      The Cosmic Discoveries website is designed to captivate and educate astronomy enthusiasts. 
+      Dive into a world of celestial exploration, uncovering detailed insights about planets, constellations, comets, and the mysteries of the universe.
+    </p>
+    <p class="fs-5">
+      Stay updated with the latest advancements in astronomy and delve into groundbreaking theories 
+      that reshape our understanding of the cosmos. Let this platform guide your journey through the stars, offering a rich and interactive experience.
+    </p>
+  </div>
+</section>
+
+
+<section class="categories-section py-5">
+    <div class="container" id="CATEGORIES">
+        <h3 class="display-4 fw-bold mb-4">The Big Bang Theory & Earth's Evolution</h3>
+      <!-- Row for Category Cards -->
+      <div class="row g-4">
+        <!-- Big Bang Theory Card (70% width) -->
+        <div class="col-md-6 col-12">
+          <div class="card shadow-sm category-card" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#bigBangModal">
+            <div class="card-image-container position-relative">
+              <img src="images/big.png" class="card-img-top" alt="Big Bang Theory">
+              <div class="card-body-overlay position-absolute bottom-0 start-0 w-100 p-3">
+                <h5 class="card-title text-white">Big Bang Theory</h5>
+                <p class="card-text text-white">Explore the origins of the universe and the scientific theories behind the Big Bang.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Evolution of Earth Card (30% width) -->
+        <div class="col-md-6 col-12">
+          <div class="card shadow-sm category-card" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#earthEvolutionModal">
+            <div class="card-image-container position-relative">
+              <img src="images/big.png" class="card-img-top" alt="Evolution of Earth">
+              <div class="card-body-overlay position-absolute bottom-0 start-0 w-100 p-3">
+                <h5 class="card-title text-white">Evolution of Earth</h5>
+                <p class="card-text text-white">Dive into the fascinating journey of Earth's formation, from its rocky beginnings to the flourishing life today.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Big Bang Theory Modal -->
+    <div class="modal fade" id="bigBangModal" tabindex="-1" aria-labelledby="bigBangModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="bigBangModalLabel">Big Bang Theory</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>What is the Big Bang Theory?</h6>
+            <p>The Big Bang Theory explains the origin of the universe. It suggests that the universe began as a singularity around 13.8 billion years ago and has been expanding ever since. Through the study of cosmic background radiation and redshift, scientists have gathered substantial evidence supporting this theory.</p>
+            
+            <img src="images/big bang.jpg" class="img-fluid mb-4" alt="Big Bang Theory" style="max-height: 300px; object-fit: cover;">
+  
+            <h6>Scientific Evidence</h6>
+            <p>The theory is supported by several key pieces of evidence:</p>
+            <ul>
+              <li><strong>Cosmic Microwave Background Radiation (CMB):</strong> Faint radiation left over from the Big Bang.</li>
+              <li><strong>Redshift of Galaxies:</strong> The observation that galaxies are moving away from us, indicating an expanding universe.</li>
+              <li><strong>Abundance of Elements:</strong> The theory predicts the ratio of hydrogen, helium, and other elements in the universe.</li>
+            </ul>
+  
+            <h6>Read More</h6>
+            <div class="d-flex align-items-center">
+              <p><a href="https://en.wikipedia.org/wiki/Big_Bang" target="_blank" class="btn btn-link">
+              <img src="images/bigband more.jpg" alt="Big Bang Graphic" class="img-fluid" style="width: 150px; height: 200px; object-fit: cover; margin-right: 10px;">
+                Read full article</a></p>
+            </div>
+  
+            <h6>Further Exploration</h6>
+            <p>In this ongoing area of research, scientists continue to study cosmic background radiation, galaxy formation, and the expansion rate of the universe. New theories are constantly emerging, challenging and refining our understanding of the universe's origin.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Evolution of Earth Modal -->
+    <div class="modal fade" id="earthEvolutionModal" tabindex="-1" aria-labelledby="earthEvolutionModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="earthEvolutionModalLabel">Evolution of Earth</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>The Evolution of Earth</h6>
+            <p>The Earth began as a molten ball around 4.5 billion years ago. Over time, the planet cooled, forming a crust, oceans, and an atmosphere. From simple microorganisms to complex ecosystems, Earth has undergone significant transformations, driven by geological and biological processes.</p>
+  
+            <img src="images/earthsevolution.jpeg" class="img-fluid mb-4" alt="Evolution of Earth" style="max-height: 300px; object-fit: cover;">
+  
+            <h6>Key Phases of Earth's Evolution</h6>
+            <ul>
+              <li><strong>Hadean Eon:</strong> The Earth was a hot, molten mass, with frequent asteroid impacts.</li>
+              <li><strong>Archean Eon:</strong> The Earth's crust cooled, and the first signs of life appeared in the oceans.</li>
+              <li><strong>Proterozoic Eon:</strong> Oxygen levels increased in the atmosphere, leading to the development of more complex life forms.</li>
+              <li><strong>Phanerozoic Eon:</strong> The emergence of abundant complex life, including dinosaurs, plants, and mammals.</li>
+            </ul>
+  
+            <h6>Read More</h6>
+            <div class="d-flex align-items-center">
+              <img src="images/earths book.jpeg" alt="Earth Evolution Graphic" class="img-fluid" style="width: 150px; height: 100px; object-fit: cover; margin-right: 10px;">
+              <p><a href="https://en.wikipedia.org/wiki/Evolution_of_the_Earth" target="_blank" class="btn btn-link">Read full article</a></p>
+            </div>
+  
+            <h6>Continuing Research</h6>
+            <p>Scientists continue to study Earth's past through fossils, rocks, and ice cores, unlocking the history of our planet. Modern research is focused on understanding Earth's future, especially in light of climate change and geological shifts.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="planets-section" class="planets-section">
+    <div class="section-heading">
+      <h2>Exploring the Wonders of Our Solar System</h2>
+      <p>Discover the planets that make up our solar system with detailed information on each one.</p>
+    </div>
+    
+    <div class="planets-cards-container">
+      <!-- Planet Card Example -->
+      <div class="planet-card" id="planet-mercury">
+        <img src="images/mecury.png" alt="Mercury" class="planet-img">
+        <div class="planet-overlay">
+          <p class="planet-name">Mercury</p>
+        </div>
+      </div>
+      
+      <div class="planet-card" id="planet-venus">
+        <img src="images/venus.png" alt="Venus" class="planet-img">
+        <div class="planet-overlay">
+          <p class="planet-name">Venus</p>
+        </div>
+      </div>
+      
+      <div class="planet-card" id="planet-earth">
+        <img src="images/earth.png" alt="Earth" class="planet-img">
+        <div class="planet-overlay">
+          <p class="planet-name">Earth</p>
+        </div>
+      </div>
+      
+      <div class="planet-card" id="planet-mars">
+        <img src="images/mars.png" alt="Mars" class="planet-img">
+        <div class="planet-overlay">
+          <p class="planet-name">Mars</p>
+        </div>
+      </div>
+      
+      <div class="planet-card" id="planet-jupiter">
+        <img src="images/jupiter.png" alt="Jupiter" class="planet-img">
+        <div class="planet-overlay">
+          <p class="planet-name">Jupiter</p>
+        </div>
+      </div>
+      
+      <div class="planet-card" id="planet-saturn">
+        <img src="images/saturn.png" alt="Saturn" class="planet-img">
+        <div class="planet-overlay">
+          <p class="planet-name">Saturn</p>
+        </div>
+      </div>
+      
+      <div class="planet-card" id="planet-uranus">
+        <img src="images/uranus.png" alt="Uranus" class="planet-img">
+        <div class="planet-overlay">
+          <p class="planet-name">Uranus</p>
+        </div>
+      </div>
+      
+      <div class="planet-card" id="planet-neptune">
+        <img src="images/neptune.png" alt="Neptune" class="planet-img">
+        <div class="planet-overlay">
+          <p class="planet-name">Neptune</p>
+        </div>
+      </div>
+      
+    </div>
+    
+    <!-- Modal for Planet Details -->
+<div id="planet-modal" class="planet-modal">
+    <div class="planet-modal-content">
+      <span class="close-btn">&times;</span>
+      <h3 id="planet-title">Planet Title</h3>
+      <img id="planet-graphic" src="" alt="Planet Image">
+      <p id="planet-description">Planet Description</p>
+      <ul id="planet-details">
+        <li><strong>Discovery Date:</strong> <span id="discovery-date">Not Available</span></li>
+        <li><strong>Size:</strong> <span id="size">Not Available</span></li>
+        <li><strong>Atmosphere:</strong> <span id="atmosphere">Not Available</span></li>
+        <li><strong>Distance from Sun:</strong> <span id="distance-sun">Not Available</span></li>
+        <li><strong>Distance from Earth:</strong> <span id="distance-earth">Not Available</span></li>
+        <li><strong>Other Details:</strong> <span id="other-details">Not Available</span></li>
+      </ul>
+    </div>
+  </div>
+  
+  </section>
+
+
+<div class="str">
+  <section id="shared-constellations-section" class="shared-constellations-section">
+    <div class="shared-container">
+      <!-- Constellations Overview -->
+      <div class="constellations-container">
+        <!-- Header and Definition -->
+        <div class="constellations-text">
+          <h3 class="display-4 fw-bold mb-4">Constellations of the Night Sky</h3>
+          <p class="constellations-definition">
+            Constellations are patterns of stars in the sky that have been identified and named by various cultures throughout history. These groupings help us navigate the night sky and have often been used for storytelling and navigation.
+          </p>
+          <h3 class="constellations-subheader">Equatorial Map of the Constellations</h3>
+          <p class="constellations-description">
+            The equatorial map provides a detailed representation of constellations as seen from Earth, mapping their positions relative to the celestial equator. This guide helps astronomers and stargazers locate stars and celestial objects.
+          </p>
+        </div>
+        <!-- Equatorial Map Image -->
+        <div class="constellations-image-container">
+          <img src="images/constellation-map-equatorial.jpg" alt="Equatorial Map of Constellations" class="constellations-map-image">
+        </div>
+        
+      </div>
+    
+  
+      <!-- Left: Constellation Cards -->
+      <div class="constellation-cards-container" id="const">
+        <h2 class="section-header">Explore 12 Known Constellations</h2>
+        <div class="constellation-cards">
+          <!-- CardS -->
+          <div class="constellation-card" data-constellation="orion">
+            <img src="images/orion.jpg" alt="Orion Constellation" class="constellation-card-image">
+            <h3 class="constellation-card-title">Orion</h3>
+          </div>
+          <div class="constellation-card" data-constellation="ursa-major">
+            <img src="images/ursa major.jpg" alt="Ursa Major Constellation" class="constellation-card-image">
+            <h3 class="constellation-card-title">Ursa Major</h3>
+        </div>
+        
+        <div class="constellation-card" data-constellation="ursa-minor">
+            <img src="images/ursa minor.jpeg" alt="Ursa Minor Constellation" class="constellation-card-image">
+            <h3 class="constellation-card-title">Ursa Minor</h3>
+        </div>
+        
+        <div class="constellation-card" data-constellation="cassiopeia">
+            <img src="images/cassiopeia.jpg" alt="Cassiopeia Constellation" class="constellation-card-image">
+            <h3 class="constellation-card-title">Cassiopeia</h3>
+        </div>
+        
+        <div class="constellation-card" data-constellation="leo">
+            <img src="images/leo.jpeg" alt="Leo Constellation" class="constellation-card-image">
+            <h3 class="constellation-card-title">Leo</h3>
+        </div>
+        
+        <div class="constellation-card" data-constellation="scorpius">
+            <img src="images/scorpio.jpeg" alt="Scorpius Constellation" class="constellation-card-image">
+            <h3 class="constellation-card-title">Scorpius</h3>
+        </div>
+        
+        <div class="constellation-card" data-constellation="gemini">
+            <img src="images/gemini.jpeg" alt="Gemini Constellation" class="constellation-card-image">
+            <h3 class="constellation-card-title">Gemini</h3>
+        </div>
+        
+        <div class="constellation-card" data-constellation="taurus">
+            <img src="images/taurus.jpeg" alt="Taurus Constellation" class="constellation-card-image">
+            <h3 class="constellation-card-title">Taurus</h3>
+        </div>
+        
+        <div class="constellation-card" data-constellation="aquarius">
+            <img src="images/aquarius.jpeg" alt="Aquarius Constellation" class="constellation-card-image">
+            <h3 class="constellation-card-title">Aquarius</h3>
+        </div>
+        
+        <div class="constellation-card" data-constellation="aries">
+            <img src="images/aries.jpeg" alt="Aries Constellation" class="constellation-card-image">
+            <h3 class="constellation-card-title">Aries</h3>
+        </div>
+        
+        <div class="constellation-card" data-constellation="cygnus">
+            <img src="images/cygnus.jpg" alt="Cygnus Constellation" class="constellation-card-image">
+            <h3 class="constellation-card-title">Cygnus</h3>
+        </div>
+        
+        <div class="constellation-card" data-constellation="perseus">
+            <img src="images/perseus.jpeg" alt="Perseus Constellation" class="constellation-card-image">
+            <h3 class="constellation-card-title">Perseus</h3>
+        </div>
+        
+        </div>
+      </div>
+
+
+    
+  
+      <!-- Right: Articles -->
+      <div class="articles-container">
+        <h2 class="section-header">Constellation Articles</h2>
+        <div class="articles-list">
+          <!-- First Article -->
+          <a href="#" class="article-link">
+          <article class="article-item">
+            <img src="images/article 1.jpeg" alt="Article Thumbnail" class="article-image">
+            <div class="article-content">
+              <h3 class="article-title">The History of Constellations</h3>
+              <p class="article-description">
+                Discover how ancient cultures identified patterns in the stars and named constellations.
+              </p>
+            </div>
+          </article>
+          </a>
+          
+          <a href="#" class="article-link">
+            <article class="article-item">
+              <img src="images/article2.jpeg" alt="Article Thumbnail" class="article-image">
+              <div class="article-content">
+                <h3 class="article-title">Famous Constellation Myths</h3>
+                <p class="article-description">
+                  Explore the legendary stories behind famous constellations from different cultures.
+                </p>
+              </div>
+            </article>
+          </a>
+          
+          <a href="#" class="article-link">
+            <article class="article-item">
+              <img src="images/article 3.jpeg" alt="Article Thumbnail" class="article-image">
+              <div class="article-content">
+                <h3 class="article-title">Stargazing Tips for Beginners</h3>
+                <p class="article-description">
+                  Learn how to find constellations and enjoy the night sky with these helpful tips.
+                </p>
+              </div>
+            </article>
+          </a>
+          
+          <a href="#" class="article-link">
+            <article class="article-item">
+              <img src="images/article4.jpeg" alt="Article Thumbnail" class="article-image">
+              <div class="article-content">
+                <h3 class="article-title">Zodiac Constellations and Their Meanings</h3>
+                <p class="article-description">
+                  Discover the 12 zodiac constellations and their significance in astrology and astronomy.
+                </p>
+              </div>
+            </article>
+          </a>
+          
+          <a href="#" class="article-link">
+            <article class="article-item">
+              <img src="images/article5.jpeg" alt="Article Thumbnail" class="article-image">
+              <div class="article-content">
+                <h3 class="article-title">Deep-Space Objects Within Constellations</h3>
+                <p class="article-description">
+                  Explore galaxies, nebulae, and star clusters found within famous constellations.
+                </p>
+              </div>
+            </article>
+          </a>
+          
+        </div>
+      </div>
+    </div>
+  
+    <!-- Popup Modal -->
+    <div id="constellation-popup" class="constellation-popup">
+      <div class="popup-content">
+        <span class="popup-close">&times;</span>
+        <h3 class="popup-title">Orion</h3>
+        <img src="" alt="" class="popup-image">
+        <p class="popup-description">
+        </p>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="comets" class="comets-section">
+    <div class="shared-container">
+      <h2 class="section-title">Comets: Cosmic Wanderers</h2>
+      <p class="section-description">
+        Comets are icy bodies from the outer reaches of the solar system. As they approach the Sun, their ice sublimates, creating spectacular tails of gas and dust.
+      </p>
+  
+      <!-- Graphics and Information Section -->
+      <div class="comets-content">
+        <!-- Left: Information -->
+        <div class="comets-info">
+          <h3>Famous Comets</h3>
+          <ul>
+            <li>
+              <strong>Halley's Comet</strong>: Visible every 76 years, the most famous periodic comet.
+            </li>
+            <li>
+              <strong>Comet NEOWISE</strong>: A bright comet visible in 2020 with a glowing tail.
+            </li>
+            <li>
+              <strong>Comet Hale-Bopp</strong>: Known for its exceptional brightness in 1997.
+            </li>
+          </ul>
+          <p>
+            Comets are classified into short-period comets (under 200 years) and long-period comets, which take thousands of years to orbit the Sun.
+          </p>
+        </div>
+  
+        <!-- Right: Graphic Presentation -->
+        <div class="comets-graphic">
+          <div class="comet-orbit">
+            <div class="comet"></div>
+            <div class="tail"></div>
+          </div>
+          <p class="graphic-caption">Illustration of a comet orbiting the Sun.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="latest-developments" class="latest-developments">
+    <div class="shared-container">
+      <h2 class="section-title">Latest Developments</h2>
+      <p class="section-description">
+        Stay updated with the newest discoveries and advancements in the field of astronomy.
+      </p>
+  
+      <div class="news-ticker">
+        <div class="ticker-wrapper">
+          <div class="ticker">
+            <div class="news-item">
+              <img src="images/big bang.jpg" alt="Exoplanet Discovery" class="news-image" />
+              <span><strong>Discovery:</strong> A new exoplanet in the habitable zone of a nearby star system.</span>
+            </div>
+            <div class="news-item">
+              <img src="images/big bang.jpg" alt="Black Hole Jet" class="news-image" />
+              <span><strong>Breakthrough:</strong> First direct image of a supermassive black hole jet by NASA.</span>
+            </div>
+            <div class="news-item">
+              <img src="images/big bang.jpg" alt="New Stars" class="news-image" />
+              <span><strong>Advancement:</strong> AI-powered telescope identifies 300+ new stars in our galaxy.</span>
+            </div>
+            <div class="news-item">
+              <img src="images/big bang.jpg" alt="Water Vapor" class="news-image" />
+              <span><strong>Insight:</strong> James Webb Telescope detects water vapor on a distant planet.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="observatories" class="observatories-section">
+    <div class="shared-container">
+      <h2 class="section-title">Top Observatories Around the World</h2>
+      <p class="section-description">
+        Explore some of the most renowned observatories globally, contributing to humanity's understanding of the universe.
+      </p>
+      
+      <div class="observatories-container">
+        <div class="observatory-list">
+          <ul>
+            <li>
+              <h3>Mauna Kea Observatory</h3>
+              <p>Location: Hawaii, USA</p>
+              <p>Highlights: Known for its telescopes at high altitudes, perfect for clear night skies.</p>
+            </li>
+            <li>
+              <h3>European Southern Observatory (ESO)</h3>
+              <p>Location: Atacama Desert, Chile</p>
+              <p>Highlights: Home to the Very Large Telescope (VLT).</p>
+            </li>
+            <li>
+              <h3>Arecibo Observatory</h3>
+              <p>Location: Arecibo, Puerto Rico</p>
+              <p>Highlights: Famous for its radio telescope (now decommissioned).</p>
+            </li>
+            <li>
+              <h3>Palomar Observatory</h3>
+              <p>Location: California, USA</p>
+              <p>Highlights: Houses the Hale Telescope, one of the largest optical telescopes.</p>
+            </li>
+            <li>
+              <h3>Royal Greenwich Observatory</h3>
+              <p>Location: London, UK</p>
+              <p>Highlights: Historically important as the location of the Prime Meridian.</p>
+            </li>
+          </ul>
+        </div>
+        <div id="map" style="width: 100%; height: 400px;"></div>
+      </div>
+    </div>
+  </section>
+  
+  
+ <section class="educational-videos" id="videos">
+    <h2 class="section-title">Explore the Cosmos: Educational Videos</h2>
+    <div class="videos-container">
+      <!-- Video Display Area -->
+      <div class="video-display">
+        <h3 class="video-title">Select a Category</h3>
+        <p class="video-description">Click on any category to explore videos about galaxies, stars, planets, and more.</p>
+        <div class="video-frame">
+          <iframe src="" frameborder="0" class="video"></iframe>
+          <iframe src="" frameborder="0" class="video"></iframe>
+        </div>
+      </div>
+  
+      <!-- Video Categories -->
+      <div class="video-categories">
+        <div class="category-card" onclick="showVideos('galaxies')">
+          <img src="images/galaxies.jpeg" alt="Galaxies" class="category-image" />
+          <h3>Galaxies</h3>
+          <p>Discover the grand structures of the universe filled with billions of stars.</p>
+        </div>
+        <div class="category-card" onclick="showVideos('stars')">
+          <img src="images/stars-universe.gif" alt="Stars" class="category-image" />
+          <h3>Stars</h3>
+          <p>Learn about the life cycles of stars, from birth to supernovae.</p>
+        </div>
+        <div class="category-card" onclick="showVideos('planets')">
+          <img src="images/planets.jpeg" alt="Planets" class="category-image" />
+          <h3>Planets</h3>
+          <p>Explore the fascinating worlds orbiting stars, including our solar system.</p>
+        </div>
+        <div class="category-card" onclick="showVideos('black-holes')">
+          <img src="images/blackhole.jpg" alt="Black Holes" class="category-image" />
+          <h3>Black Holes</h3>
+          <p>Dive into the mysteries of these powerful cosmic phenomena.</p>
+        </div>
+        <div class="category-card" onclick="showVideos('exoplanets')">
+          <img src="images/exoplanets.jpeg" alt="Exoplanets" class="category-image" />
+          <h3>Exoplanets</h3>
+          <p>Uncover planets beyond our solar system, many with unique features.</p>
+        </div>
+        <div class="category-card" onclick="showVideos('comets')">
+          <img src="images/comets.jpeg" alt="Comets" class="category-image" />
+          <h3>Comets</h3>
+          <p>Learn about these icy travelers that light up the night sky.</p>
+        </div>
+      </div>
+    </div>
+  </section> 
+  
+
+  <section class="related-books" id="e-books">
+    <h2 class="books-section-title">Explore Related Books</h2>
+    <div class="books-container">
+      <!-- Book 1 -->
+      <div class="book-card">
+        <img src="images/BOOK1.jpeg" alt="Galaxy Book Cover" class="book-cover">
+        <div class="book-info">
+          <h3 class="book-title">The Mysteries of Galaxies</h3>
+          <p class="book-author">by Dr. Astrophysics</p>
+          <div class="book-buttons">
+            <a href="#" class="book-button">Purchase</a>
+            <a href="#" class="book-button">Borrow</a>
+          </div>
+        </div>
+      </div>
+      <!-- Book 2 -->
+      <div class="book-card">
+        <img src="images/BOOK2.jpeg" alt="Stars Book Cover" class="book-cover">
+        <div class="book-info">
+          <h3 class="book-title">Understanding Stars</h3>
+          <p class="book-author">by Jane Stellar</p>
+          <div class="book-buttons">
+            <a href="#" class="book-button">Purchase</a>
+            <a href="#" class="book-button">Borrow</a>
+          </div>
+        </div>
+      </div>
+      <!-- Book 3 -->
+      <div class="book-card">
+        <img src="images/BOOK3.jpg" alt="Planets Book Cover" class="book-cover">
+        <div class="book-info">
+          <h3 class="book-title">Planets: A Beginner's Guide</h3>
+          <p class="book-author">by John Orbit</p>
+          <div class="book-buttons">
+            <a href="#" class="book-button">Purchase</a>
+            <a href="#" class="book-button">Borrow</a>
+          </div>
+        </div>
+      </div>
+      <!-- Book 1 -->
+      <div class="book-card">
+        <img src="images/BOOK4.jpeg" alt="Galaxy Book Cover" class="book-cover">
+        <div class="book-info">
+          <h3 class="book-title">The Mysteries of Galaxies</h3>
+          <p class="book-author">by Dr. Astrophysics</p>
+          <div class="book-buttons">
+            <a href="#" class="book-button">Purchase</a>
+            <a href="#" class="book-button">Borrow</a>
+          </div>
+        </div>
+      </div>
+      <!-- Book 2 -->
+      <div class="book-card">
+        <img src="images/BOOK1.jpeg" alt="Stars Book Cover" class="book-cover">
+        <div class="book-info">
+          <h3 class="book-title">Understanding Stars</h3>
+          <p class="book-author">by Jane Stellar</p>
+          <div class="book-buttons">
+            <a href="#" class="book-button">Purchase</a>
+            <a href="#" class="book-button">Borrow</a>
+          </div>
+        </div>
+      </div>
+      <!-- Book 3 -->
+      <div class="book-card">
+        <img src="images/BOOK4.jpeg" alt="Planets Book Cover" class="book-cover">
+        <div class="book-info">
+          <h3 class="book-title">Planets: A Beginner's Guide</h3>
+          <p class="book-author">by John Orbit</p>
+          <div class="book-buttons">
+            <a href="#" class="book-button">Purchase</a>
+            <a href="#" class="book-button">Borrow</a>
+          </div>
+        </div>
+      </div>
+      <!-- Additional books can be added similarly -->
+    </div>
+  </section>
+
+
+  <section class="about-contact">
+    <!-- About Us Section -->
+    <div class="about-us">
+      <h2 class="section-title">About Us</h2>
+      <p class="about-description">
+        At <strong>Cosmic Discoveries</strong>, our mission is to make the wonders of the universe accessible to everyone. 
+        Our team of passionate astronomers, educators, and developers work tirelessly to provide accurate, engaging, 
+        and visually stunning content about galaxies, planets, stars, and beyond. Join us in exploring the cosmos!
+      </p>
+      <div class="team">
+        <div class="team-member">
+          <img src="images/team1.jpeg" alt="Team Member 1" class="team-photo">
+          <h4>Dr. Aurora Sky</h4>
+          <p>Lead Astronomer</p>
+        </div>
+        <div class="team-member">
+          <img src="images/team2.jpeg" alt="Team Member 2" class="team-photo">
+          <h4>John Nova</h4>
+          <p>Content Specialist</p>
+        </div>
+        <div class="team-member">
+          <img src="images/team3.jpeg" alt="Team Member 3" class="team-photo">
+          <h4>Jane Stellar</h4>
+          <p>Creative Designer</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Contact Us Section --> 
+    <div class="contact-us" id="contact-about">
+      <h2 class="section-title">Contact Us</h2>
+      <p class="contact-info">
+        Got a question or suggestion? We'd love to hear from you! Reach out to us at:
+      </p>
+      <p>Email: <a href="mailto:contact@cosmicdiscoveries.com">contact@cosmicdiscoveries.com</a></p>
+      <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+      <div id="map" class="map">
+        <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.123456789012!2d7.362345678901234!3d9.042345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1234567890abcdef%3A0xabcdef1234567890!2sLugbe%2C%20Abuja%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1612345678901!5m2!1sen!2sng" 
+                    width="100%" height="300px"  allowfullscreen="" loading="lazy">
+                </iframe>
+      </div>
+    </div>
+  </section> 
+  
+  <!-- Footer Section -->
+  <footer class="detailed-footer">
+    <div class="footer-container">
+
+  
+      <!-- Quick Links -->
+      <div class="footer-section links">
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#planets-section">Planets</a></li>
+            <li><a href="#videos">Galaxies</a></li>
+            <li><a href="#videos">Stars</a></li>
+            <li><a href="#latest-developments">Latest Developments</a></li>
+            <li><a href="#observatories">Observatories</a></li>
+            <li><a href="#comets">Comets</a></li>
+           
+        </ul>
+      </div>
+      <!-- Quick Links -->
+      <div class="footer-section links">
+        <ul>
+            <li><a href="#videos">Black Holes</a></li>
+            <li><a href="#const">Constellations of the Sky</a></li>
+            <li><a href="#CATEGORIES">The Big Bang Theory</a></li>
+            <li><a href="#CATEGORIES">Evolution Of The Earth</a></li>
+            <li><a href="#videos">VIDEOS</a></li>
+            <li><a href="#e-books">E-BOOKS</a></li>
+        </ul>
+      </div>
+  
+      <!-- Connect with Us -->
+      <div class="footer-section social">
+        <h3>Connect with Us</h3>
+        <ul class="social-links">
+          <li><a href="#" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+          <li><a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+          <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="#" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
+        </ul>
+      </div>
+  
+      <!-- Subscribe Section -->
+      <div class="footer-section subscribe">
+        <h3>Stay Updated</h3>
+        <p>Subscribe to our newsletter for the latest updates on cosmic discoveries.</p>
+        <form class="subscribe-form">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="ticker-container">
+        <div class="ticker">
+            <span id="ticker-text">Loading location and time...</span>
+        </div>
+    </div>
+    
+  </footer>
+  
+
+  
+
+ 
+
+
+
+  
+  
+
+<!-- Add Google Maps API -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyn7sGsGBBsrIYx0LkCpmGqEgox03LiYk=initMap" async defer></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
